@@ -31,8 +31,16 @@ true.r <- function(r){
   }
   return(sum(lx.mx.e_rx)-1)
 }
-true.r(0.0855)
 
+ans <- NULL
+for (j in seq(0.0800, 0.0900, by = 0.0001)) {
+  ans[j] <- true.r(j)
+}
+true.r(seq(0.0800, 0.0900, by = 0.0001))
+true.r(0.0855)
+true.r(0.07)
+true.r(0.08)
+true.r(0.09)
 ?nlm
 
 
